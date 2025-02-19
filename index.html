@@ -6,12 +6,23 @@
     <title>Night/Day Toggle</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body id="body">
 
+    <!--Light/Dark Toggle Button-->
     <button onclick="myFunction()" id="backgroundChange"><i class="fa-solid fa-sun"></i></button>
     <h2 id="clickMe">Day</h2>
-       
+     
+
+    <!--Alert Message-->
+    <div id="customAlert">
+        <h1>Instructions</h1>
+        <p id="alertMessage"></p>
+        <button onclick="hideAlert()">Okay</button>
+    </div>
 
     
 
@@ -19,7 +30,9 @@
 
     <script>
 
-        alert("Instructions:Click the icon to switch from light to dark mode");
+        /*Light/Dark Toggle Button*/
+
+
         let changed = false;
         const button = document.getElementById("backgroundChange"); 
 
@@ -41,6 +54,20 @@
             }
             changed = !changed;
         }
+
+        /*Alert Message*/
+
+        function showAlert(message) {
+            document.getElementById("alertMessage").textContent = message;
+            document.getElementById("customAlert").style.display = "flex";
+        }
+    
+        function hideAlert() {
+            document.getElementById("customAlert").style.display = "none";
+        }
+    
+        showAlert("Click the icon to switch between light to dark mode");
+
     </script>
 
 </body>
