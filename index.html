@@ -15,19 +15,8 @@
     <!--Light/Dark Toggle Button-->
     <button onclick="myFunction()" id="backgroundChange"><i class="fa-solid fa-sun"></i></button>
     <h2 id="clickMe">Day</h2>
-     
-
-    <!--Alert Message-->
-    <div id="customAlert">
-        <h1>Instructions</h1>
-        <p id="alertMessage"></p>
-        <button onclick="hideAlert()">Okay</button>
-    </div>
 
     
-
-
-
     <script>
 
         /*Light/Dark Toggle Button*/
@@ -55,18 +44,6 @@
             changed = !changed;
         }
 
-        /*Alert Message*/
-
-        function showAlert(message) {
-            document.getElementById("alertMessage").textContent = message;
-            document.getElementById("customAlert").style.display = "flex";
-        }
-    
-        function hideAlert() {
-            document.getElementById("customAlert").style.display = "none";
-        }
-    
-        showAlert("Click the icon to switch between light and dark mode");
 
     </script>
 
