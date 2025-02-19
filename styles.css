@@ -13,7 +13,7 @@ button {
     width:100px;
     border-radius: 50%;
     border:none;
-    background-color: black;
+    background-color:rgb(255, 203, 112);
     color:white;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -26,4 +26,6 @@ i {
 h2 {
     letter-spacing: 1px;
     text-transform: lowercase;
+    font-weight: 400;
 }
+
