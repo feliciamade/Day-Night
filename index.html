@@ -14,7 +14,7 @@
 
     <!--Light/Dark Toggle Button-->
     <button onclick="myFunction()" id="backgroundChange"><i class="fa-solid fa-sun"></i></button>
-    <h2 id="clickMe">Day</h2>
+    
 
     
     <script>
@@ -31,14 +31,14 @@
                 button.innerHTML = '<i class="fa-solid fa-sun"></i>'; 
                 button.style.backgroundColor = "rgb(255, 203, 112)";
                 button.style.color = "white";
-                document.getElementById("clickMe").style.color = "white";
+               
                 
             } else {
                 document.getElementById("body").style.backgroundColor = "rgb(22, 22, 72)";
                 button.innerHTML = '<i class="fa-solid fa-moon"></i>'; 
                 button.style.backgroundColor = "white";
                 button.style.color = "rgb(22, 22, 72)";
-                document.getElementById("clickMe").style.color = "white";
+                
                 
             }
             changed = !changed;
